@@ -29,7 +29,7 @@ function searchByName($firstName,$lastName,$suffix){
 	$request->ParentFolderIds->DistinguishedFolderId = new EWSType_DistinguishedFolderIdType();
 	$request->ParentFolderIds->DistinguishedFolderId->Id = EWSType_DistinguishedFolderIdNameType::CONTACTS;
 	$request->ParentFolderIds->DistinguishedFolderId->Mailbox = new StdClass;
-	$request->ParentFolderIds->DistinguishedFolderId->Mailbox->EmailAddress = 'smragon@intersystems.com';
+	$request->ParentFolderIds->DistinguishedFolderId->Mailbox->EmailAddress = 'masteraccount@domain.com';
 	
 	$request->Traversal = EWSType_ItemQueryTraversalType::SHALLOW;
 
@@ -99,7 +99,7 @@ function searchByEmail($primaryEmail){
 	$request->ParentFolderIds->DistinguishedFolderId = new EWSType_DistinguishedFolderIdType();
 	$request->ParentFolderIds->DistinguishedFolderId->Id = EWSType_DistinguishedFolderIdNameType::CONTACTS;
 	$request->ParentFolderIds->DistinguishedFolderId->Mailbox = new StdClass;
-	$request->ParentFolderIds->DistinguishedFolderId->Mailbox->EmailAddress = 'smragon@intersystems.com';
+	$request->ParentFolderIds->DistinguishedFolderId->Mailbox->EmailAddress = 'masteraccount@domain.com';
 	
 	$request->Traversal = EWSType_ItemQueryTraversalType::SHALLOW;
 
@@ -183,7 +183,7 @@ function createChangeList($dateTime){
 	$request->ParentFolderIds->DistinguishedFolderId = new EWSType_DistinguishedFolderIdType();
 	$request->ParentFolderIds->DistinguishedFolderId->Id = EWSType_DistinguishedFolderIdNameType::CONTACTS;
 	$request->ParentFolderIds->DistinguishedFolderId->Mailbox = new StdClass;
-	$request->ParentFolderIds->DistinguishedFolderId->Mailbox->EmailAddress = 'smragon@intersystems.com';
+	$request->ParentFolderIds->DistinguishedFolderId->Mailbox->EmailAddress = 'masteraccount@domain.com';
 	
 	$request->Traversal = EWSType_ItemQueryTraversalType::SHALLOW;
 	for($i=0;$i<3;$i++){
@@ -390,9 +390,9 @@ function retrieveContact($exchangeId, $exchangeChangeKey){
 */
 function newWebService(){
 	
-	$server = 'owa2.intersystems.com';
-	$username = 'iscinternal\cledin';
-	$password = 'Password1';
+	$server = 'owa2.domain.com';
+	$username = 'domain\dummy';
+	$password = 'Chang3Me';
 
 	$ews = new ExchangeWebServices($server, $username, $password, ExchangeWebServices::VERSION_2010_SP2);
 	

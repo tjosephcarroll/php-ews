@@ -72,7 +72,7 @@ function createExchangeContact($firstName,$lastName,$category,$middleName,$title
 	$request->SavedItemFolderId->DistinguishedFolderId = new EWSType_DistinguishedFolderIdType();
 	$request->SavedItemFolderId->DistinguishedFolderId->Id = EWSType_DistinguishedFolderIdNameType::CONTACTS;
 	$request->SavedItemFolderId->DistinguishedFolderId->Mailbox = new StdClass;
-	$request->SavedItemFolderId->DistinguishedFolderId->Mailbox->EmailAddress = 'smragon@intersystems.com';
+	$request->SavedItemFolderId->DistinguishedFolderId->Mailbox->EmailAddress = 'masteraccount@domain.com';
 
 
 	$request->Items->Contact[] = $contact;

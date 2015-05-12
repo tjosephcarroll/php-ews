@@ -47,7 +47,7 @@ include_once($filename);
 
 
 
-//$test = searchByName('Corey','Ledin','');
+//$test = searchByName('Test','Ledin','');
 //echo '<br>',print_r($test);
 /**/
 ?>
