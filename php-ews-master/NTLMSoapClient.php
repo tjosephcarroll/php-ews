@@ -57,6 +57,7 @@ class NTLMSoapClient extends SoapClient
      */
     public function __doRequest($request, $location, $action, $version, $one_way = 0)
     {
+
         $headers = array(
             'Method: POST',
             'Connection: Keep-Alive',
@@ -77,6 +78,8 @@ class NTLMSoapClient extends SoapClient
         curl_setopt($this->ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
         curl_setopt($this->ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC | CURLAUTH_NTLM);
         curl_setopt($this->ch, CURLOPT_USERPWD, $this->user.':'.$this->password);
+
+
 
         $response = curl_exec($this->ch);
 

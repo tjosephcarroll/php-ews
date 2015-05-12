@@ -1175,6 +1175,8 @@ class ExchangeWebServices
      */
     public function UploadItems($request)
     {
+        
+
         $this->initializeSoapClient();
         $response = $this->soap->{__FUNCTION__}($request);
 
