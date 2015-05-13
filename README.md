@@ -10,12 +10,6 @@ There is a need to access, update, create, and delete the contact information st
 Exchange Interface Package:
 The exchange interface provides a simple functions package that allows application developers to manipulate exchange contacts. The exchange interface is built upon the php-ews package (https://github.com/jamesiarmes/php-ews) and shares all dependencies.
 
-Hierarchy:
-•	exchangeinterface.php
-  o	exchangecreatedeletefunctions.php
-  o	exchangeupdatefunctions.php
-  o	exchangeremovefunctions.php
-  o	exchangeutilities.php
 
 Configuration:
 To configure the exchange interface, one needs to edit the newWebService() function which is defined in exchangeutilities.php. Recall, that the credentials that you provide should be for the dummy account. 
