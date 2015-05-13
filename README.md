@@ -14,12 +14,13 @@ The exchange interface provides a simple functions package that allows applicati
 Configuration:
 To configure the exchange interface, one needs to edit the newWebService() function which is defined in exchangeutilities.php. Recall, that the credentials that you provide should be for the dummy account. 
 
-function newWebService(){
-	
-	$server = 'yourserver.yourdomain.com';
-	$username = 'username';
-	$password = 'password';
-	…}
+	function newWebService()
+	{
+		$server = 'yourserver.yourdomain.com';
+		$username = 'username';
+		$password = 'password';
+		...
+	}
 Additionally, if users should find all occurrences of masteraccount@domain.com and replace those with the email of the true owner of the contacts being shared with your dummy account. 
 
 Then simply include exchangeinterface.php and the rest is comes along with it. 
